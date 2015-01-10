@@ -1,0 +1,58 @@
+html
+  text-align: center
+  background: $blue url(img/FF_window-bg.png) repeat top left
+  height: 100.5%
+
+body
+  width: 940px
+  border: 12px solid white
+  margin: 40px auto
+  text-align: left
+  position: relative
+  overflow: visible
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px 0
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px 0
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px 0
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px 0
+
+#home-page, #holding-page
+  height: 627px
+
+#page-header, #page-content, #page-footer
+  clear: both
+  overflow: visible
+
+#page-content
+  overflow: auto
+  article
+    header
+      width: 500px
+      height: 110px
+      margin: 90px 0px 75px 260px
+      -moz-transform: rotate(-5deg)
+      -webkit-transform: rotate(-5deg)
+      -o-transform: rotate(-5deg)
+      transform: rotate(-5deg)
+    #related-content-1
+      float: left
+      width: 220px
+      position: relative
+    #main-content
+      float: left
+      width: 420px
+      margin: 0 15px
+      padding: 0 24px
+      border-left: 1px solid #bcbec0
+      &.wide
+        width: 680px !important
+        margin: 0 0 0 15px
+        padding: 0 0 0 24px
+      &.full-width
+        width: 100% !important
+        margin: 40px 0 0 0
+        padding: 0
+        border: none
+        border-top: 1px solid #bcbec0
+    #related-content-2
+      float: right
+      width: 220px

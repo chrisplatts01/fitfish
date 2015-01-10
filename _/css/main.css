@@ -84,7 +84,7 @@ input, select {
   src: url("../fnt/you_are_loved-webfont.eot#") format("embedded-opentype"), url("../fnt/you_are_loved-webfont.woff") format("woff"), url("../fnt/you_are_loved-webfont.ttf") format("truetype"), url("../fnt/you_are_loved-webfont.svg#webfontzm1gSw5x") format("svg");
 }
 html {
-  background-color: #265e80;
+  background-color: #257290;
 }
 
 body {
@@ -98,7 +98,7 @@ h1 {
 }
 
 h2, h3, h4 {
-  color: #265e80;
+  color: #257290;
 }
 
 h1 {
@@ -141,12 +141,20 @@ ol li {
   list-style: decimal;
 }
 
+dl dt {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+dl dd {
+  margin-left: 1em;
+}
+
 small {
   font-size: 0.9em;
 }
 
 a {
-  color: #265e80;
+  color: #257290;
 }
 a:visited {
   color: #666666;
@@ -158,7 +166,8 @@ article header h1, article header h2, article header p {
 
 html {
   text-align: center;
-  background: #265e80 url(img/FF_window-bg.png) repeat top left;
+  background: #257290 url(img/FF_window-bg.png) repeat top left;
+  height: 100.5%;
 }
 
 body {
@@ -200,28 +209,6 @@ body {
   width: 220px;
   position: relative;
 }
-#page-content article #related-content-1 dt {
-  font-weight: bold;
-  font-size: 1.1em;
-  margin: 0.5em 0 0.25em;
-}
-#page-content article #related-content-1 dd {
-  position: relative;
-}
-#page-content article #related-content-1 .stamp {
-  color: #257290;
-  font-family: YouAreLovedRegular;
-  -moz-transform: rotate(-5deg);
-  -webkit-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-  position: absolute;
-  top: -10px;
-  opacity: 0.8;
-  left: 30px;
-  font-size: 3em;
-  font-weight: bold;
-}
 #page-content article #main-content {
   float: left;
   width: 420px;
@@ -248,7 +235,7 @@ body {
 
 #page-header h1 {
   width: 253px;
-  height: 114px;
+  height: 120px;
   position: absolute;
   top: 0;
   left: 0;
@@ -259,15 +246,11 @@ body {
   font-family: "YouAreLovedRegular", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
   font-size: 1.5em;
   font-weight: normal;
-  width: 212px;
   height: 17px;
+  left: 0;
   position: absolute;
   top: 280px;
-  left: 0;
-}
-
-body {
-  background: white url(img/mastheads/why_fitfish_masthead.jpg) no-repeat top left;
+  width: 212px;
 }
 
 #contact-us {
@@ -380,7 +363,7 @@ nav ul li {
   padding: 0;
   position: relative;
 }
-nav ul li a {
+nav ul li a, nav ul li span {
   display: block;
   font-size: 0.8em;
   padding: 0 10px;
@@ -389,17 +372,26 @@ nav ul li a {
   color: #666666;
   background-color: white;
 }
+nav ul li a {
+  font-weight: bold;
+}
 nav ul li a:hover, nav ul li a:focus {
   color: white;
   background-color: #1fbabf;
 }
+nav ul li span {
+  font-style: italic;
+}
 nav ul li ul {
-  width: 140px;
+  width: 180px;
   background-color: white;
   position: absolute;
   top: 16px;
   left: 0;
   display: none;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 nav ul li ul li {
   float: none;
@@ -409,34 +401,11 @@ nav ul li ul li {
 nav ul li ul li:first-child {
   border: none;
 }
-nav ul li ul li a {
+nav ul li ul li a, nav ul li ul li span {
   padding: 5px;
 }
 nav ul li:hover ul {
   display: block;
-}
-
-#page-footer {
-  position: absolute;
-  bottom: -42px;
-  right: -10px;
-  font-size: 0.85em;
-}
-#page-footer ul li {
-  display: inline;
-  border-right: 1px solid white;
-  padding: 0 7px;
-  margin: 0;
-}
-#page-footer ul li:last-child {
-  border: none;
-}
-#page-footer ul a {
-  color: white;
-  text-decoration: none;
-}
-#page-footer ul a:hover {
-  text-decoration: underline;
 }
 
 #page-content article header h1 {
@@ -467,10 +436,6 @@ nav ul li:hover ul {
   text-align: center;
   font-size: 0.9em;
   line-height: 1.25;
-  -moz-box-shadow: #333333 1px 1px 5px 0;
-  -webkit-box-shadow: #333333 1px 1px 5px 0;
-  -o-box-shadow: #333333 1px 1px 5px 0;
-  box-shadow: #333333 1px 1px 5px 0;
   -moz-transform: rotate(5deg);
   -webkit-transform: rotate(5deg);
   -o-transform: rotate(5deg);
@@ -555,7 +520,7 @@ nav ul li:hover ul {
   color: white;
   padding: 5px 15px;
   margin: 0;
-  background-color: #265e80;
+  background-color: #257290;
   border: none;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -598,27 +563,27 @@ nav ul li:hover ul {
   padding-top: 5px;
 }
 #page-content table {
-  border-top: 2px solid #265e80;
-  border-bottom: 2px solid #265e80;
+  border-top: 2px solid #257290;
+  border-bottom: 2px solid #257290;
   width: 100%;
-  color: #265e80;
+  color: #257290;
 }
 #page-content table tr th {
-  border-right: 1px solid #265e80;
+  border-right: 1px solid #257290;
   font-weight: bold;
   text-align: left;
   padding: 2px 4px;
   vertical-align: bottom;
 }
 #page-content table tr th[scope=row] {
-  border-bottom: 1px solid #265e80;
+  border-bottom: 1px solid #257290;
 }
 #page-content table tr th:last-child {
   border-right: none;
 }
 #page-content table tr td {
-  border-top: 1px solid #265e80;
-  border-right: 1px solid #265e80;
+  border-top: 1px solid #257290;
+  border-right: 1px solid #257290;
   padding: 2px 4px;
 }
 #page-content table tr td:last-child {
@@ -629,7 +594,7 @@ nav ul li:hover ul {
   width: 80px;
   text-decoration: none;
   margin: 1px;
-  background-color: #265e80;
+  background-color: #257290;
   color: white;
   text-align: center;
 }
@@ -660,7 +625,7 @@ nav ul li:hover ul {
   font-size: 0.8em;
 }
 #page-content .top a {
-  color: #265e80;
+  color: #257290;
   text-decoration: underline;
 }
 #page-content .location {
@@ -692,7 +657,7 @@ nav ul li:hover ul {
 }
 #page-content .winter-location {
   width: 195px;
-  height: 865px;
+  height: 650px;
   position: relative;
   color: white;
   background-color: #1fbabf;
@@ -722,11 +687,11 @@ nav ul li:hover ul {
 }
 #page-content .jumps a {
   font-weight: bold;
-  color: #265e80;
+  color: #257290;
 }
 #page-content .qandas dt {
   font-weight: bold;
-  color: #265e80;
+  color: #257290;
 }
 #page-content .vcard .org {
   font-weight: bold;
@@ -745,20 +710,20 @@ nav ul li:hover ul {
 }
 
 #main-content hgroup {
-  border-bottom: 1px solid #265e80;
+  border-bottom: 1px solid #257290;
   margin-bottom: 10px;
 }
 #main-content hgroup h1 {
   font-family: "YouAreLovedRegular", "HelveticaNeue", "Arial", "Helvetica", sans-serif;
   font-size: 2em;
   font-weight: normal;
-  color: #265e80;
+  color: #257290;
 }
 #main-content hgroup h2 {
   font-family: "HelveticaNeue", "Arial", "Helvetica", sans-serif;
   font-size: 1em;
   font-weight: bold;
-  color: #265e80;
+  color: #257290;
 }
 #main-content blockquote.testimonial {
   margin: 0.5em 0 0 0;
@@ -775,7 +740,7 @@ nav ul li:hover ul {
   position: relative;
   top: 0.4em;
   padding-right: 5px;
-  color: #265e80;
+  color: #257290;
 }
 #main-content blockquote.testimonial p:after {
   content: "”";
@@ -784,7 +749,7 @@ nav ul li:hover ul {
   position: relative;
   top: 0.4em;
   padding-left: 5px;
-  color: #265e80;
+  color: #257290;
 }
 #main-content .testimonial-source {
   font-size: 0.9em;
@@ -792,6 +757,29 @@ nav ul li:hover ul {
   font-style: italic;
   margin: -0.5em 0 0.5em 0;
   padding: 0;
+}
+
+#related-content-1 dt {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0.5em 0 0.25em;
+}
+#related-content-1 dd {
+  position: relative;
+}
+#related-content-1 .stamp {
+  color: #257290;
+  font-family: YouAreLovedRegular;
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  position: absolute;
+  top: -10px;
+  opacity: 0.8;
+  left: 30px;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 #related-content-1 {
@@ -925,7 +913,7 @@ nav ul li:hover ul {
   box-shadow: #333333 1px 1px 5px 0;
 }
 #related-content-2 .event-info h1 {
-  color: #265e80;
+  color: #257290;
   background-color: white;
   line-height: 1.25;
   padding: 5px;
@@ -957,19 +945,42 @@ nav ul li:hover ul {
   color: white;
 }
 
+#page-footer {
+  position: absolute;
+  bottom: -42px;
+  right: -10px;
+  font-size: 0.85em;
+}
+#page-footer ul li {
+  display: inline;
+  border-right: 1px solid white;
+  padding: 0 7px;
+  margin: 0;
+}
+#page-footer ul li:last-child {
+  border: none;
+}
+#page-footer ul a {
+  color: white;
+  text-decoration: none;
+}
+#page-footer ul a:hover {
+  text-decoration: underline;
+}
+
 #recipe-types .recipe-type {
   width: 134;
   margin: 0 10px 10px 0;
   padding: 0 5px;
   float: left;
-  border: 1px solid #265e80;
+  border: 1px solid #257290;
 }
 #recipe-types .recipe-type h3 {
   font-size: 0.9em;
   text-align: center;
 }
 #recipe-types .recipe-type a {
-  color: #265e80;
+  color: #257290;
 }
 #recipe-types .recipe-type a:hover {
   background-color: #eee;
@@ -1001,7 +1012,7 @@ nav ul li:hover ul {
 .testimonials .tabs a {
   font-weight: bold;
   text-decoration: none;
-  color: #265e80;
+  color: #257290;
 }
 .testimonials .tabs a:hover, .testimonials .tabs a:focus {
   text-decoration: underline;

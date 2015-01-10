@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<title>Typical programme - Fitfish</title>
+
+	<!-- Metadata -->
+	<meta name="author" content="Fitfish" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/_/css/main.css" />
+
+	<!--[if lte IE 8]>
+	<style>
+		.book-it { position: absolute !important; top: 150px !important; right: 10px !important; height: 75px !important; }
+	</style>
+	<![endif]-->
+
+	<!--[if lte IE 7]>
+	<style>
+		#main-content { width: 400px !important; }
+		#page-footer { position: absolute !important; bottom: 0; right: 0; font-size: 0.85em; background-color: #265e80; width: 100%; }
+	</style>
+	<![endif]-->
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="/_/js/jquery.placeheld.min.js"></script>
+	<script src="/_/js/jquery.textshadow.js"></script>
+	<script src="/_/js/modernizr-1.6.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			// Show only first team member
+			$(".team-member").hide();
+			$(".team-member#gaynor-burton").show();
+			$(".top").hide();
+
+			$("#related-content-1 blockquote").hide();
+			$("#related-content-1 blockquote#gaynor-burton-quote").show();
+
+			// Show selected team member
+			$(".thumbs a").click(function(){
+				var selected_member = $(this).attr("href");
+				var selected_quote = selected_member + "-quote";
+
+
+
+				$(".team-member").hide();
+				$(selected_member).show();
+
+				$("#related-content-1 blockquote").hide();
+				$(selected_quote).show();
+
+				return false;
+			});
+		});
+	</script>
+</head>
+
+<body id="weekends">
+
+<header id="page-header" role="banner">
+	<hgroup>
+		<h1>Fitfish</h1>
+		<h2>Fit for MORE</h2>
+	</hgroup>
+</header>
+
+<nav id="main-nav" role="navigation">
+  <ul>
+
+    <li><a href="/">Home</a></li>
+
+    <li><span>About Fitfish</span>
+      <ul>
+        <li><a href="/about-fitfish/what-is-fitfish">What is Fitfish</a></li>
+        <li><a href="/about-fitfish/meet-the-team">Meet the team</a></li>
+      </ul>
+    </li>
+
+    <li><span>Retreats</span>
+      <ul>
+        <li><span>Weekends</span></li>
+        <li><a href="/retreats/weekends/2015-03-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Mar 2015</a></li>
+        <li><a href="/retreats/weekends/2015-05-windermere.html">&nbsp;&nbsp;&bull; Windermere May 2015</a></li>
+        <li><a href="/retreats/weekends/2015-06-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Jun 2015</a></li>
+        <li><a href="/retreats/weekends/2015-09-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Sep 2015</a></li>
+        <li><a href="/retreats/weekends/2015-10-staffordshire.html">&nbsp;&nbsp;&bull; Staffordshire Oct 2015</a></li>
+        <li><a href="/retreats/weekends/2015-11-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Nov 2015</a></li>
+        <li><a href="/retreats/weekends/programme.html">&nbsp;&nbsp;&bull; A typical programme</a></li>
+        <li><span>Weeks</span></li>
+        <li><a href="/retreats/weeks/snow-and-spa.html">&nbsp;&nbsp;&bull; Snow &amp; Spa Jan 2015</a></li>
+        <li><a href="/retreats/weeks/france.html">&nbsp;&nbsp;&bull; France Jun 2015</a></li>
+        <li><a href="/retreats/prices">Prices</a></li>
+        <li><a href="/retreats/book-now">Book now</a></li>
+        <li><a href="/retreats/feedback">Feedback</a></li>
+      </ul>
+    </li>
+
+    <li><span>Nutrition</span>
+      <ul>
+        <li><a href="/nutrition/recipes">Recipes</a></li>
+        <li><a href="/nutrition/ypop">Your Plate of Plenty</a></li>
+        <li><a href="/nutrition/ypop-success">Your Plate of Plenty Success</a></li>
+      </ul>
+    </li>
+
+    <li><span>Local</span>
+      <ul>
+        <li><a href="/local/at-work">At work</a></li>
+        <li><a href="/local/days">Days</a></li>
+        <!-- li><a href="/local/classes">Classes</a></li -->
+
+        <li><a href="/local/localfit">Localfit</a></li>
+      </ul>
+    </li>
+
+    <li><span>Motivation</span>
+      <ul>
+        <li><a href="/motivation/inspiration">Inspiration</a></li>
+        <li><a href="/motivation/online-support-groups">Online support groups</a></li>
+        <li><a href="/motivation/enewsletter" target="_blank" onclick="window.open('/motivation/enewsletter/index.html', 'eNewsletter', 'width=300,height=550');return false;">eNewsletter</a></li>
+      </ul>
+    </li>
+
+    <li><span>Partnerships</span>
+      <ul>
+        <li><a href="http://www.biblesociety.org.uk/about-bible-society/our-work/lyfe/fitlyfe/" target="_blank">Fitlyfe</a></li>
+        <!-- li><a href="http://www.biblesociety.org.uk/about-bible-society/our-work/mary-jones/" target="_blank">Mary Jones Challenge</a></li -->
+        <li><a href="http://www.libertimagazine.com/2011/05/gaynor-burton.html " target="_blank">Liberti</a></li>
+        <!-- li><a href="http://www.richmond-holidays.com" target="_blank">Richmond</a></li -->
+      </ul>
+    </li>
+
+    <li><a href="/friends">Friends</a></li>
+
+    <li><a href="http://fitfishshop.oxatis.com" target="_blank">Shop</a></li>
+
+    <li><a href="/contact-us/index.html">Contact us</a></li>
+
+  </ul>
+</nav>
+
+<div id="page-content" role="main">
+	<article>
+		<header>
+      <h1>Weekends</h1>
+			<h2>A typical timetable</h2>
+			<div class="book-it">
+				<a href="/retreats/prices"><img src="/_/img/book-it-button-2.png" alt="book it" width="109" height="77" /></a>
+			</div>
+		</header>
+		<section id="related-content-1">
+		</section>
+		<section id="main-content">
+			<hgroup>
+        <h1>Weekends</h1>
+  			<h2>A typical timetable</h2>
+			</hgroup>
+
+      <p>Here is an example of what your weekend could look like.</p>
+      <p>We plan the exercise sessions according to the ability of people coming. Most people on the retreats are low to average fitness levels but we will also have a more advanced stream if there are people who exercise more regularly. </p>
+
+      <p>New for 2015 we have a second stream of talks and workshops for repeat guests too.</p>
+
+      <table>
+      <colgroup>
+      <col style="text-align:left;"/>
+      <col style="text-align:left;"/>
+      </colgroup>
+
+      <thead>
+      <tr>
+        <th style="text-align:left;" width="100">Time</th>
+        <th style="text-align:left;">Activity</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td style="text-align:left;" colspan="2"><strong>Friday</strong></td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">19.00&#8211;20.00</td>
+        <td style="text-align:left;">Arrivals and welcome drinks</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">20.00&#8211;21.00</td>
+        <td style="text-align:left;">Dinner</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">21.00&#8211;21.45</td>
+        <td style="text-align:left;">Intro to weekend</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">21.45&#8211;22.15</td>
+        <td style="text-align:left;">Reflection</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;" colspan="2"><strong>Saturday</strong></td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">07.30&#8211;08.15</td>
+        <td style="text-align:left;">Walk or Jog</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">08.30&#8211;09.15</td>
+        <td style="text-align:left;">Breakfast</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">09.15&#8211;10.15</td>
+        <td style="text-align:left;">Worship and Talk 1</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">10.30&#8211;11.15</td>
+        <td style="text-align:left;">Zumba</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">11.15&#8211;11.45</td>
+        <td style="text-align:left;">Snack Break</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">11.45–12.30</td>
+        <td style="text-align:left;">Pilates or Boxing</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">12.30&#8211;13.00</td>
+        <td style="text-align:left;">Shower and Free Time</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">13.00&#8211;13.45</td>
+        <td style="text-align:left;">Lunch</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">14.00&#8211;15.00</td>
+        <td style="text-align:left;">Nutrition Workshop/Repeat Guests Stream</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">15.00&#8211;18.00</td>
+        <td style="text-align:left;">Free Time and Emotional Health Options</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">15.15&#8211;16.15</td>
+        <td style="text-align:left;">Finding Spiritual Balance in the Everyday workshop/ Repeat Guests Stream</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">16.45</td>
+        <td style="text-align:left;">Snack Break</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">17.00&#8211;17.45</td>
+        <td style="text-align:left;">Soaking</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">18.00&#8211;19.00</td>
+        <td style="text-align:left;">The Fitfish Story/ Repeat Guests Stream</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">19.15&#8211;20.15</td>
+        <td style="text-align:left;">Dinner</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">20.15</td>
+        <td style="text-align:left;">Worship and Talk 2</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">21.30</td>
+        <td style="text-align:left;">Ministry and free time</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;" colspan="2"><strong>Sunday</strong></td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">07.30&#8211;08.15</td>
+        <td style="text-align:left;">Walk and Stretch or High Intensity Interval Running</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">08.30&#8211;09.15</td>
+        <td style="text-align:left;">Breakfast</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">09.15&#8211;10.00</td>
+        <td style="text-align:left;">The Benefits of a Healthy Lifestyle/ Repeat Guests Stream</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">10.00&#8211;10.45</td>
+        <td style="text-align:left;">Circuits Beginners Running</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">10.45&#8211;11.15</td>
+        <td style="text-align:left;">Snack Break</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">10.00&#8211;11.15</td>
+        <td style="text-align:left;">GP Drop In (overlaps the 2 previous sessions)</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">11.15&#8211;12.00</td>
+        <td style="text-align:left;">Praise Aerobics</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">12.00&#8211;12.30</td>
+        <td style="text-align:left;">Shower and Free Time</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">12.30&#8211;13.15</td>
+        <td style="text-align:left;">Team Testimonies</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">13.15&#8211;14.00</td>
+        <td style="text-align:left;">Lunch</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">14.00&#8211;15.00</td>
+        <td style="text-align:left;">Wrap Up Talk</td>
+      </tr>
+      <tr>
+        <td style="text-align:left;">15.15&#8211;16.00</td>
+        <td style="text-align:left;">Closing Session</td>
+      </tr>
+      </tbody>
+      </table>
+		</section>
+		<section id="related-content-2">
+		</section>
+	</article>
+	<aside class="share-this">
+			Share<br>
+			<a href="http://www.facebook.com/pages/Fitfish/174520802583696"><img src="/_/img/facebook.png" alt="Facebook" width="36" height="36" /></a><br>
+			<a href="http://www.twitter.com/FitfishTweets"><img src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png" alt="Follow Fitfish on Twitter" width="36" height="36" /></a>
+	</aside>
+</div>
+
+<footer id="page-footer" role="contentinfo">
+	<ul>
+		<li><a href="/_/pdf/terms.pdf" target="_blank">Terms &amp; conditions</a></li>
+		<li><a href="/_/pdf/privacy.pdf" target="_blank">Privacy policy</a></li>
+		<li><a href="/contact-us">Contact details</a></li>
+	</ul>
+</footer>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21699255-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50771900-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

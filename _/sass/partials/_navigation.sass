@@ -1,12 +1,19 @@
 nav
+  @include clearfix
   z-index: 1000
   position: absolute
-  top: 0
+  top: -12px
   right: 0
+  width: 940px
+  background-color: white
+  // overflow: hidden
+
   ul
     background-color: white
     margin: 0
     padding: 0
+    float: right
+
     li
       float: left
       list-style: none
@@ -17,11 +24,17 @@ nav
       a, span
         display: block
         font-size: 0.8em
-        padding: 0 10px
+        padding: 10px
         text-decoration: none
         text-transform: uppercase
         color: #666666
         background-color: white
+
+      &.expandable > span
+        &:hover, &:focus
+          cursor: pointer
+          color: white
+          background-color: #1fbabf
 
       a
         font-weight: bold
@@ -34,12 +47,12 @@ nav
         font-style: italic
 
       ul
+        display: none
         width: 180px
         background-color: white
         position: absolute
-        top: 16px
+        top: 100%
         left: 0
-        display: none
         border-bottom: 1px solid #ccc
         border-left: 1px solid #ccc
         border-right: 1px solid #ccc
@@ -52,5 +65,9 @@ nav
             border: none
           a, span
             padding: 5px
-      &:hover ul
+
+      &.expanded ul
         display: block
+
+      // &.expandable:hover ul
+      //   display: block

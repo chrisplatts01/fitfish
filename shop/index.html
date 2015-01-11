@@ -26,12 +26,6 @@
 	</style>
 	<![endif]-->
 
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	<script src="/_/js/jquery.placeheld.min.js"></script>
-	<script src="/_/js/jquery.textshadow.js"></script>
-	<script src="/_/js/modernizr-1.6.min.js"></script>
-
 <style>
 	#products {
 		overflow: hidden;
@@ -90,11 +84,7 @@
 		background-image: linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
 		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f4f3eb', EndColorStr='#e9e6dd');
 	}
-
-
 </style>
-
-
 </head>
 
 <body id="shop">
@@ -111,14 +101,14 @@
 
     <li><a href="/">Home</a></li>
 
-    <li><span>About Fitfish</span>
+    <li class="expandable"><span>About Fitfish</span>
       <ul>
         <li><a href="/about-fitfish/what-is-fitfish">What is Fitfish</a></li>
         <li><a href="/about-fitfish/meet-the-team">Meet the team</a></li>
       </ul>
     </li>
 
-    <li><span>Retreats</span>
+    <li class="expandable"><span>Retreats</span>
       <ul>
         <li><span>Weekends</span></li>
         <li><a href="/retreats/weekends/2015-03-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Mar 2015</a></li>
@@ -137,7 +127,7 @@
       </ul>
     </li>
 
-    <li><span>Nutrition</span>
+    <li class="expandable"><span>Nutrition</span>
       <ul>
         <li><a href="/nutrition/recipes">Recipes</a></li>
         <li><a href="/nutrition/ypop">Your Plate of Plenty</a></li>
@@ -145,7 +135,7 @@
       </ul>
     </li>
 
-    <li><span>Local</span>
+    <li class="expandable"><span>Local</span>
       <ul>
         <li><a href="/local/at-work">At work</a></li>
         <li><a href="/local/days">Days</a></li>
@@ -155,7 +145,7 @@
       </ul>
     </li>
 
-    <li><span>Motivation</span>
+    <li class="expandable"><span>Motivation</span>
       <ul>
         <li><a href="/motivation/inspiration">Inspiration</a></li>
         <li><a href="/motivation/online-support-groups">Online support groups</a></li>
@@ -163,7 +153,7 @@
       </ul>
     </li>
 
-    <li><span>Partnerships</span>
+    <li class="expandable"><span>Partnerships</span>
       <ul>
         <li><a href="http://www.biblesociety.org.uk/about-bible-society/our-work/lyfe/fitlyfe/" target="_blank">Fitlyfe</a></li>
         <!-- li><a href="http://www.biblesociety.org.uk/about-bible-society/our-work/mary-jones/" target="_blank">Mary Jones Challenge</a></li -->
@@ -259,6 +249,10 @@
 		<li><a href="/contact-us">Contact details</a></li>
 	</ul>
 </footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="/_/js/fitfish.js"></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">

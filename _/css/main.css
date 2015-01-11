@@ -237,7 +237,7 @@ body {
   width: 253px;
   height: 120px;
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
   text-indent: -5000px;
   background: url(img/FF_logo_home.png) no-repeat top left;
@@ -346,15 +346,26 @@ body {
 }
 
 nav {
+  *zoom: 1;
   z-index: 1000;
   position: absolute;
-  top: 0;
+  top: -12px;
   right: 0;
+  width: 940px;
+  background-color: white;
+}
+nav:before, nav:after {
+  content: " ";
+  display: table;
+}
+nav:after {
+  clear: both;
 }
 nav ul {
   background-color: white;
   margin: 0;
   padding: 0;
+  float: right;
 }
 nav ul li {
   float: left;
@@ -366,11 +377,16 @@ nav ul li {
 nav ul li a, nav ul li span {
   display: block;
   font-size: 0.8em;
-  padding: 0 10px;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   color: #666666;
   background-color: white;
+}
+nav ul li.expandable > span:hover, nav ul li.expandable > span:focus {
+  cursor: pointer;
+  color: white;
+  background-color: #1fbabf;
 }
 nav ul li a {
   font-weight: bold;
@@ -383,12 +399,12 @@ nav ul li span {
   font-style: italic;
 }
 nav ul li ul {
+  display: none;
   width: 180px;
   background-color: white;
   position: absolute;
-  top: 16px;
+  top: 100%;
   left: 0;
-  display: none;
   border-bottom: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -404,7 +420,7 @@ nav ul li ul li:first-child {
 nav ul li ul li a, nav ul li ul li span {
   padding: 5px;
 }
-nav ul li:hover ul {
+nav ul li.expanded ul {
   display: block;
 }
 

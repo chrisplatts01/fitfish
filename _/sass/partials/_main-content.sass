@@ -16,6 +16,10 @@
       text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px
       -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666')"
       filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666')
+
+      .full
+        color: $red
+
     .book-it
       padding: 0
       color: white
@@ -160,12 +164,23 @@
           border-right: none
         .highlight
           display: block
-          width: 80px
+          padding: 0 5px
           text-decoration: none
           margin: 1px
           background-color: $blue
-          color: white
+          color: $white
           text-align: center
+          white-space: nowrap
+        .red
+          display: block
+          width: auto
+          padding: 0 5px
+          text-decoration: none
+          margin: 1px
+          background-color: $red
+          color: $white
+          text-align: center
+          white-space: nowrap
   .left
     width: 48%
     float: left
@@ -267,6 +282,12 @@
       font-size: 1em
       font-weight: bold
       color: $blue
+
+      .full
+        color: $white
+        background-color: $red
+        padding: 1px 5px
+
   blockquote.testimonial
     margin: 0.5em 0 0 0
     padding: 0.5em 0 0 0

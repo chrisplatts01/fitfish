@@ -442,6 +442,9 @@ nav ul li.expanded ul {
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666')";
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666');
 }
+#page-content article header h2 .full {
+  color: #c00;
+}
 #page-content article header .book-it {
   padding: 0;
   color: white;
@@ -607,12 +610,24 @@ nav ul li.expanded ul {
 }
 #page-content table tr td .highlight {
   display: block;
-  width: 80px;
+  padding: 0 5px;
   text-decoration: none;
   margin: 1px;
   background-color: #257290;
-  color: white;
+  color: #fff;
   text-align: center;
+  white-space: nowrap;
+}
+#page-content table tr td .red {
+  display: block;
+  width: auto;
+  padding: 0 5px;
+  text-decoration: none;
+  margin: 1px;
+  background-color: #c00;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
 }
 #page-content .left {
   width: 48%;
@@ -740,6 +755,11 @@ nav ul li.expanded ul {
   font-size: 1em;
   font-weight: bold;
   color: #257290;
+}
+#main-content hgroup h2 .full {
+  color: #fff;
+  background-color: #c00;
+  padding: 1px 5px;
 }
 #main-content blockquote.testimonial {
   margin: 0.5em 0 0 0;

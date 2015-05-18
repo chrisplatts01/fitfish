@@ -635,7 +635,7 @@ nav ul li.expanded ul {
   padding: 0 5px;
   text-decoration: none;
   margin: 1px;
-  background-color: #c0c;
+  background-color: #fecb2e;
   color: #fff;
   text-align: center;
   white-space: nowrap;
@@ -1024,6 +1024,53 @@ nav ul li.expanded ul {
 }
 #page-footer ul a:hover {
   text-decoration: underline;
+}
+
+.highlight {
+  display: block;
+  padding: 0 5px;
+  text-decoration: none;
+  margin: 1px;
+  background-color: #257290;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.red {
+  display: block;
+  width: auto;
+  padding: 0 5px;
+  text-decoration: none;
+  margin: 1px;
+  background-color: #c00;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.amber {
+  display: block;
+  width: auto;
+  padding: 0 5px;
+  text-decoration: none;
+  margin: 1px;
+  background-color: #fecb2e;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.green {
+  display: block;
+  width: auto;
+  padding: 0 5px;
+  text-decoration: none;
+  margin: 1px;
+  background-color: #00c;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
 }
 
 #recipe-types .recipe-type {

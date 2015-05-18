@@ -629,6 +629,28 @@ nav ul li.expanded ul {
   text-align: center;
   white-space: nowrap;
 }
+#page-content table tr td .amber {
+  display: block;
+  width: auto;
+  padding: 0 5px;
+  text-decoration: none;
+  margin: 1px;
+  background-color: #c0c;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+#page-content table tr td .green {
+  display: block;
+  width: auto;
+  padding: 0 5px;
+  text-decoration: none;
+  margin: 1px;
+  background-color: #00c;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
 #page-content .left {
   width: 48%;
   float: left;

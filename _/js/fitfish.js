@@ -30,9 +30,9 @@ $(function() {
   // Show only first team member
   $(".team-member").hide();
   $(".team-member#gaynor-burton").show();
-  $(".top").hide();
-  $("#related-content-1 blockquote").hide();
-  $("#related-content-1 blockquote#gaynor-burton-quote").show();
+  $(".top", "#meet-the-team").hide();
+  $("#related-content-1 blockquote", "#meet-the-team").hide();
+  $("#related-content-1 blockquote#gaynor-burton-quote", "#meet-the-team").show();
 
   // Show selected team member
   $(".thumbs a").click(function(){
@@ -42,7 +42,7 @@ $(function() {
     $(".team-member").hide();
     $(selected_member).show();
 
-    $("#related-content-1 blockquote").hide();
+    $("#related-content-1 blockquote", "#meet-the-team").hide();
     $(selected_quote).show();
 
     return false;

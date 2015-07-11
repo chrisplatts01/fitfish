@@ -3,7 +3,7 @@ $(function() {
   // -----------------------------------
   // Randomize home page background
   // -----------------------------------
-  var rand = Math.floor(Math.random()*6);
+  var rand = Math.floor(Math.random()*7);
   var bg = "bg" + rand;
 
   $("#home-page").addClass(bg);

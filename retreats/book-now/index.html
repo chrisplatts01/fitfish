@@ -50,19 +50,22 @@
       </ul>
     </li>
 
+    <li><a href="/days">Days</a></li>
+    
     <li class="expandable"><span>Retreats</span>
       <ul>
         <li><span>Weekends</span></li>
-        <li><a href="/retreats/weekends/2015-03-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Mar 2015</a></li>
-        <li><a href="/retreats/weekends/2015-05-windermere.html">&nbsp;&nbsp;&bull; Windermere May 2015</a></li>
-        <li><a href="/retreats/weekends/2015-06-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Jun 2015</a></li>
         <li><a href="/retreats/weekends/2015-09-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Sep 2015</a></li>
         <li><a href="/retreats/weekends/2015-10-staffordshire.html">&nbsp;&nbsp;&bull; Staffordshire Oct 2015</a></li>
         <li><a href="/retreats/weekends/2015-11-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Nov 2015</a></li>
+        <li><a href="/retreats/weekends/2016-03-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Mar 2016</a></li>
+        <li><a href="/retreats/weekends/2016-04-house-of-bread.html">&nbsp;&nbsp;&bull; House of Bread Apr 2016</a></li>
+        <li><a href="/retreats/weekends/2016-07-goodlake.html">&nbsp;&nbsp;&bull; Goodlake Jul 2016</a></li>
+        <li><a href="/retreats/weekends/2016-09-house-of-bread.html">&nbsp;&nbsp;&bull; House of Bread Sep 2016</a></li>
         <li><a href="/retreats/weekends/programme.html">&nbsp;&nbsp;&bull; A typical programme</a></li>
         <li><span>Weeks</span></li>
         <li><a href="/retreats/weeks/snow-and-spa.html">&nbsp;&nbsp;&bull; Snow &amp; Spa Jan 2016</a></li>
-        <li><a href="/retreats/weeks/france.html">&nbsp;&nbsp;&bull; France Jun 2015</a></li>
+        <li><a href="/retreats/weeks/france.html">&nbsp;&nbsp;&bull; France Jun 2016</a></li>
         <li><a href="/retreats/prices">Prices</a></li>
         <li><a href="/retreats/book-now">Book now</a></li>
         <li><a href="/retreats/feedback">Feedback</a></li>
@@ -80,7 +83,7 @@
     <li class="expandable"><span>Local</span>
       <ul>
         <li><a href="/local/at-work">At work</a></li>
-        <li><a href="/local/days">Days</a></li>
+        <!-- li><a href="/local/days">Days</a></li -->
         <!-- li><a href="/local/classes">Classes</a></li -->
 
         <li><a href="/local/localfit">Localfit</a></li>
@@ -174,14 +177,16 @@
 					<td>
 						<select id="Retreat" name="Retreat*">
 							<option value="" disabled="disabled" selected>Please choose&hellip;</option>
-              <!-- option value="Goodlake March 2015">Goodlake 27th-29th March 2015</option -->
               <!-- option value="Windermere May 2015">Windermere May 2015</option -->
-              <!-- option value="France June 2015">France June 2015</option -->
-              <!-- option value="Goodlake June 2015">Goodlake June 2015</option -->
               <option value="Goodlake September 2015">Goodlake September 2015</option>
 							<option value="Shallowford, Staffs - 30th October 2015-1st November 2015">Shallowford October 2015</option>
               <option value="Goodlake November 2015">Goodlake November 2015</option>
 							<option value="Snow and Spa January 2016">Snow and Spa January 2016</option>
+              <option value="Goodlake March 2016">Goodlake March 2016</option>
+              <option value="House of Bread April 2016">House of Bread April 2016</option>
+              <option value="France June 2016">France June 2016</option>
+              <option value="Goodlake July 2015">Goodlake July 2015</option>
+              <option value="House of Bread September 2016">House of Bread September 2016</option>
 						</select>
 					</td>
 					<td><label for="Room">Room*</label></td>
@@ -196,6 +201,11 @@
 								<option value="Goodlake Barns - Twin/Double single occupancy £399 ensuite">Goodlake Barns - Twin/Double single occupancy £399 ensuite</option>
 							</optgroup>
 
+							<optgroup label="House of Bread">
+								<option value="House of Bread - Twin £259">House of Bread - Twin £259</option>
+								<option value="House of Bread - Twin single occupancy £299">House of Bread - Twin single occupancy £299</option>
+							</optgroup>
+
 							<optgroup label="Shallowford">
 								<option value="Shallowford - Twin £259 ensuite">Shallowford - Twin £259 ensuite</option>
 								<option value="Shallowford - Single £269 ensuite">Shallowford - Single £269 ensuite</option>
@@ -203,20 +213,12 @@
 								<option value="Shallowford - Twin single occupancy £279 ensuite">Shallowford - Twin single occupancy £279 ensuite</option>
 							</optgroup>
 
-							<!-- optgroup label="Windermere">
-								<option value="Windermere - Twin &pound;259 ensuite">Windermere - Twin &pound;259 ensuite</option>
-								<option value="Windermere - Single &pound;279 ensuite">Windermere - Single &pound;279 ensuite</option>
-								<option value="Windermere - Twin single occupancy &pound;289 ensuite">Windermere - Twin single occupancy &pound;289 ensuite</option>
-							</optgroup -->
-
-							<!-- optgroup label="France">
+							<optgroup label="France">
 								<option value="France - Twin Ensuite Villa - &pound;569">France - Twin Ensuite Villa - &pound;569</option>
 								<option value="France - Twin Shared Bathroom Villa - &pound;499">France - Twin Shared Bathroom Villa - &pound;499</option>
 								<option value="France - Single Occ Twin Ensuite Villa - &pound;639">France - Single Occ Twin Ensuite Villa - &pound;639</option>
 								<option value="France - Single Occ Shared Bathroom Villa  - &pound;569">France - Single Occ Shared Bathroom Villa  - &pound;569</option>
-								<option value="France - Single Occ Ensuite Luxury Mobile Home - &pound;599">France - Single Occ Ensuite Luxury Mobile Home - &pound;599</option>
-								<option value="France - Single Occ Shared Bathroom Mobile home - &pound;499">France - Single Occ Shared Bathroom Mobile home - &pound;499</option>
-							</optgroup -->
+							</optgroup>
 
 							<optgroup label="Snow and  Spa Austria - January 2016">
 								<option value="Snow and Spa - Triple Room £589">Snow and Spa - Triple Room £589</option>
@@ -238,7 +240,7 @@
 					<td colspan="4">
 					  <h3>Your Options</h3>
             <p><strong>(Not applicable for the Snow and Spa Trip)</strong></p>
-            <!-- p>For Fitfish France please choose between Life Coaching and Listening Prayer as your first choice.</p -->
+            <p>For Fitfish France please choose between Life Coaching and Listening Prayer as your first choice.</p>
             <dl>
               <dt>Listening Prayer</dt>
               <dd>Team members listening to God about you and the way that He uniquely designed you. You just sit and relax!</dd>

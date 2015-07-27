@@ -3,10 +3,13 @@ $(function() {
   // -----------------------------------
   // Randomize home page background
   // -----------------------------------
-  var rand = Math.floor(Math.random()*7);
+  var numberOfImages = 6;
+  var rand = Math.ceil(Math.random() * numberOfImages);
   var bg = "bg" + rand;
 
   $("#home-page").addClass(bg);
+
+  console.log(bg)
 
   // -----------------------------------
   // Toggle navigation submenus

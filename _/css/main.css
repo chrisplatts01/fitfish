@@ -261,6 +261,10 @@ body {
   background: white url(img/mastheads/cotswolds_header.jpg) no-repeat top left;
 }
 
+#days {
+  background: white url(img/mastheads/localfit-masthead.jpg) no-repeat top left;
+}
+
 #devon {
   background: white url(img/mastheads/lee-abbey-masthead.png) no-repeat top left;
 }
@@ -283,6 +287,10 @@ body {
 
 #henley {
   background: white url(img/mastheads/green_field_masthead.jpg) no-repeat top left;
+}
+
+#house-of-bread {
+  background: white url(img/mastheads/house-of-bread.jpg) no-repeat top left;
 }
 
 #kintbury {

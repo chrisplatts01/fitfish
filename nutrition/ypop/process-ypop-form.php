@@ -60,26 +60,27 @@
 			echo "</ul>\n";
 			echo '<p>Please use the PayPal button, below, to pay for <strong>Your Plate</strong>. Alternatively please make a transfer to a/c 83198586 sort code 09-01-27 stating your name as the reference.  Once payment is received we will start working on <strong>Your Plate</strong> straightaway. If you fill <strong>Your Plate</strong> you will fulfil <strong>Your Goals!</strong></p>';
 			echo '
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="width: 200px; margin: 0 auto; padding: 10px; border: 1px solid #2040a0;">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="V5D7QRR9XDVSC">
-					<table>
-						<tr>
-							<td><input type="hidden" name="on0" value="Your Plate">Your Plate</td></tr>
-						<tr>
-							<td>
-								<select name="os0">
-						        	<option value="Simple">Simple £39.00 GBP</option>
-						            <option value="Standard">Standard £59.00 GBP</option>
-						            <option value="Success">Success £129.00 GBP</option>
-						        </select>
-						    </td>
-						</tr>
-					</table>
-					<input type="hidden" name="currency_code" value="GBP">
-					<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-				</form>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="V5D7QRR9XDVSC">
+          <table>
+            <tr>
+              <td><input type="hidden" name="on0" value="Your Plate">Your Plate</td>
+            </tr>
+            <tr>
+              <td>
+                <select name="os0">
+                  <option value="Simple">Simple £39.00 GBP</option>
+                  <option value="Standard">Standard £59.00 GBP</option>
+                  <option value="Success">Success £79.00 GBP</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <input type="hidden" name="currency_code" value="GBP">
+          <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
 			';
 		}
 

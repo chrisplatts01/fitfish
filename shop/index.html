@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
+  <meta charset="utf-8" />
 
-	<title>Shop - Fitfish</title>
+  <title>Shop - Fitfish</title>
 
-	<!-- Metadata -->
-	<meta name="author" content="Fitfish" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+  <!-- Metadata -->
+  <meta name="author" content="Fitfish" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/_/css/main.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/_/css/main.css" />
 
-	<!--[if lte IE 8]>
-	<style>
-		.book-it { position: absolute !important; top: 150px !important; right: 10px !important; height: 75px !important; }
-	</style>
-	<![endif]-->
+  <!--[if lte IE 8]>
+  <style>
+    .book-it { position: absolute !important; top: 150px !important; right: 10px !important; height: 75px !important; }
+  </style>
+  <![endif]-->
 
-	<!--[if lte IE 7]>
-	<style>
-		#main-content { width: 400px !important; }
-		#page-footer { position: absolute !important; bottom: 0; right: 0; font-size: 0.85em; background-color: #265e80; width: 100%; }
-	</style>
-	<![endif]-->
+  <!--[if lte IE 7]>
+  <style>
+    #main-content { width: 400px !important; }
+    #page-footer { position: absolute !important; bottom: 0; right: 0; font-size: 0.85em; background-color: #265e80; width: 100%; }
+  </style>
+  <![endif]-->
 
 <style>
-	#products {
-		overflow: hidden;
-		clear: both;
-		margin: 10px 0;
-	}
-	.product {
-		width: 180px;
-		height: 400px;
-		border: 1px solid #ccc;
-		float: left;
-		padding: 5px;
-		margin: 5px;
-		-moz-border-radius:    7px;
-		-webkit-border-radius: 7px;
-		border-radius:         7px;
-	}
-	.product-image img {
-		width: 170px;
-		padding: 4px;
-		border: 1px solid #eee;
-	}
-	.product-name {
-		color: #265e80;
-		font-size: 1.1em;
-		margin: 5px 0;
-		font-weight: bold;
-	}
-	.product-price {
-		font-weight: bold;
-	}
-	.product-description {
-		font-size: 0.9em;
-	}
-	.order-button {
-		float: right;
-		clear: both;
-		margin-right: 40px;
-	}
-	.order-button a {
-		display: block;
-		color: #666;
-		font-weight: bold;
-		text-decoration: none;
-		padding: 5px 10px;
-		border: 1px solid #f4f3eb;
-		-moz-border-radius: 7px;
-		-webkit-border-radius: 7px;
-		border-radius: 7px;
-		background-color: #f4f3eb;
-		background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(53, 29%, 94%)), to(hsl(45, 21%, 89%)));
-		background-image: -webkit-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
-		background-image: -moz-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
-		background-image: -o-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
-		background-image: -ms-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
-		background-image: linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
-		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f4f3eb', EndColorStr='#e9e6dd');
-	}
+  #products {
+    overflow: hidden;
+    clear: both;
+    margin: 10px 0;
+  }
+  .product {
+    width: 180px;
+    height: 400px;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    -moz-border-radius:    7px;
+    -webkit-border-radius: 7px;
+    border-radius:         7px;
+  }
+  .product-image img {
+    width: 170px;
+    padding: 4px;
+    border: 1px solid #eee;
+  }
+  .product-name {
+    color: #265e80;
+    font-size: 1.1em;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  .product-price {
+    font-weight: bold;
+  }
+  .product-description {
+    font-size: 0.9em;
+  }
+  .order-button {
+    float: right;
+    clear: both;
+    margin-right: 40px;
+  }
+  .order-button a {
+    display: block;
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #f4f3eb;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #f4f3eb;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(53, 29%, 94%)), to(hsl(45, 21%, 89%)));
+    background-image: -webkit-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
+    background-image: -moz-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
+    background-image: -o-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
+    background-image: -ms-linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
+    background-image: linear-gradient(top, hsl(53, 29%, 94%), hsl(45, 21%, 89%));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f4f3eb', EndColorStr='#e9e6dd');
+  }
 </style>
 </head>
 
 <body id="shop">
 
 <header id="page-header" role="banner">
-	<hgroup>
-		<h1>Fitfish</h1>
-		<h2>Fit for MORE</h2>
-	</hgroup>
+  <hgroup>
+    <h1>Fitfish</h1>
+    <h2>Fit for MORE</h2>
+  </hgroup>
 </header>
 
 <nav id="main-nav" role="navigation">
@@ -109,7 +109,7 @@
     </li>
 
     <li><a href="/days">Days</a></li>
-    
+
     <li class="expandable"><span>Retreats</span>
       <ul>
         <li><span>Weekends</span></li>
@@ -164,7 +164,7 @@
       </ul>
     </li>
 
-    <li><a href="/friends">Friends</a></li>
+    <li><a href="http://www.fitfishfriends.co.uk" target="_blank">Friends</a></li>
 
     <li><a href="http://fitfishshop.oxatis.com" target="_blank">Shop</a></li>
 
@@ -174,82 +174,82 @@
 </nav>
 
 <div id="page-content" role="main">
-	<article>
-		<header>
-			<h1>Fitfish Shop</h1>
-			<h2>Inspire and motivate  yourself and those around you with our Fitfish goodies</h2>
-			<div class="book-it">
-				<a href="contact.html"><img src="/_/img/buy-it-button.png" alt="book it" width="109" height="77" /></a>
-			</div>
-		</header>
-		<section id="related-content-1">
-			<blockquote class="bible-quote" cite="#citation-1">
-			<p>To order any of these goodies then please use the <a href="contact.html">Contact Us form</a></p>
-			</blockquote>
-		</section>
-		<section id="main-content" style="width: 640px">
-			<hgroup>
-				<h1>Fitfish Shop</h1>
-				<h2>Inspire and motivate  yourself and those around you with our Fitfish goodies</h2>
-			</hgroup>
-			<!-- div class="order-button"><a href="contact.html">Order</a></div -->
-			<div id="products">
-				<div class="product">
-					<div class="product-name">Fitfish T-shirt</div>
-					<div class="product-image"><img src="/_/img/Shop-Shirt-Front.jpg" alt="Fitfish T-shirt" /></div>
-					<div class="product-price">£16.49 inc p&p</div>
-					<div class="product-description">Ladies fit or baggy fit performance wicking t-shirt
-						<br /><i>Available in XS, S, M, L, XL, XXL or ladies fit 8,10,12,14,16</i></div>
-				</div>
-				<div class="product">
-					<div class="product-name">Fitfish Water Bottle</div>
-					<div class="product-image"><img src="/_/img/Shop-Water-Bottle.jpg" alt="Fitfish water bottle" /></div>
-					<div class="product-price">£3.99 inc p&p</div>
-					<div class="product-description">Tip me any way up and I don’t leak or drip, 500ml</div>
-				</div>
-				<div class="product">
-					<div class="product-name">Fitfish Notebook</div>
-					<div class="product-image"><img src="/_/img/Shop-Book.jpg" alt="Fitfish notebook" /></div>
-					<div class="product-price">£2.99 inc p&p</div>
-					<div class="product-description">Stylish recycled A6 notebook</div>
-				</div>
-				<div class="product">
-					<div class="product-name">Fitfish Bag</div>
-					<div class="product-image"><img src="/_/img/Shop-Bag.jpg" alt="Fitfish bag" /></div>
-					<div class="product-price">£10.99 inc p&p</div>
-					<div class="product-description">Roomy rucksack with a front zip and side pocket for water bottle</div>
-				</div>
-				<div class="product">
-					<div class="product-name">Wooden Fish Pendant</div>
-					<div class="product-image"><img src="/_/img/Shop-Necklace.jpg" alt="Wooden fish pendant" /></div>
-					<div class="product-price">£3.99 inc p&p</div>
-					<div class="product-description">Available in turquoise, navy, red, yellow, black or green</div>
-				</div>
-				<div class="product">
-					<div class="product-name">Resistance Bands</div>
-					<div class="product-image"><img src="/_/img/Shop-Bands.jpg" alt="Resistance bands" /></div>
-					<div class="product-price">£3.49 or £9.99 for 3 inc p&p</div>
-					<div class="product-description">Available in 3 different strengths, challenge your muscles with this lightweight easily transportable kit.
-						<br /><i>Red easiest, green medium, blue hardest</i></div>
-				</div>
-			</div>
-			<p>Please use the <a href="contact.html">Contact Us form</a> to order</p>
-			<!-- div class="order-button"><a href="contact.html">Order</a></div -->
- 		</section>
-	</article>
-	<aside class="share-this">
-			Share<br>
-			<a href="http://www.facebook.com/pages/Fitfish/174520802583696"><img src="/_/img/facebook.png" alt="Facebook" width="36" height="36" /></a><br>
-			<a href="http://www.twitter.com/FitfishTweets"><img src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png" alt="Follow Fitfish on Twitter" width="36" height="36" /></a>
-	</aside>
+  <article>
+    <header>
+      <h1>Fitfish Shop</h1>
+      <h2>Inspire and motivate  yourself and those around you with our Fitfish goodies</h2>
+      <div class="book-it">
+        <a href="contact.html"><img src="/_/img/buy-it-button.png" alt="book it" width="109" height="77" /></a>
+      </div>
+    </header>
+    <section id="related-content-1">
+      <blockquote class="bible-quote" cite="#citation-1">
+      <p>To order any of these goodies then please use the <a href="contact.html">Contact Us form</a></p>
+      </blockquote>
+    </section>
+    <section id="main-content" style="width: 640px">
+      <hgroup>
+        <h1>Fitfish Shop</h1>
+        <h2>Inspire and motivate  yourself and those around you with our Fitfish goodies</h2>
+      </hgroup>
+      <!-- div class="order-button"><a href="contact.html">Order</a></div -->
+      <div id="products">
+        <div class="product">
+          <div class="product-name">Fitfish T-shirt</div>
+          <div class="product-image"><img src="/_/img/Shop-Shirt-Front.jpg" alt="Fitfish T-shirt" /></div>
+          <div class="product-price">£16.49 inc p&p</div>
+          <div class="product-description">Ladies fit or baggy fit performance wicking t-shirt
+            <br /><i>Available in XS, S, M, L, XL, XXL or ladies fit 8,10,12,14,16</i></div>
+        </div>
+        <div class="product">
+          <div class="product-name">Fitfish Water Bottle</div>
+          <div class="product-image"><img src="/_/img/Shop-Water-Bottle.jpg" alt="Fitfish water bottle" /></div>
+          <div class="product-price">£3.99 inc p&p</div>
+          <div class="product-description">Tip me any way up and I don’t leak or drip, 500ml</div>
+        </div>
+        <div class="product">
+          <div class="product-name">Fitfish Notebook</div>
+          <div class="product-image"><img src="/_/img/Shop-Book.jpg" alt="Fitfish notebook" /></div>
+          <div class="product-price">£2.99 inc p&p</div>
+          <div class="product-description">Stylish recycled A6 notebook</div>
+        </div>
+        <div class="product">
+          <div class="product-name">Fitfish Bag</div>
+          <div class="product-image"><img src="/_/img/Shop-Bag.jpg" alt="Fitfish bag" /></div>
+          <div class="product-price">£10.99 inc p&p</div>
+          <div class="product-description">Roomy rucksack with a front zip and side pocket for water bottle</div>
+        </div>
+        <div class="product">
+          <div class="product-name">Wooden Fish Pendant</div>
+          <div class="product-image"><img src="/_/img/Shop-Necklace.jpg" alt="Wooden fish pendant" /></div>
+          <div class="product-price">£3.99 inc p&p</div>
+          <div class="product-description">Available in turquoise, navy, red, yellow, black or green</div>
+        </div>
+        <div class="product">
+          <div class="product-name">Resistance Bands</div>
+          <div class="product-image"><img src="/_/img/Shop-Bands.jpg" alt="Resistance bands" /></div>
+          <div class="product-price">£3.49 or £9.99 for 3 inc p&p</div>
+          <div class="product-description">Available in 3 different strengths, challenge your muscles with this lightweight easily transportable kit.
+            <br /><i>Red easiest, green medium, blue hardest</i></div>
+        </div>
+      </div>
+      <p>Please use the <a href="contact.html">Contact Us form</a> to order</p>
+      <!-- div class="order-button"><a href="contact.html">Order</a></div -->
+    </section>
+  </article>
+  <aside class="share-this">
+      <a href="http://www.facebook.com/pages/Fitfish/174520802583696"><img src="/_/img/social-icons/facebook.png" alt="Facebook" width="40" height="40" /></a><br>
+      <a href="http://www.twitter.com/FitfishTweets"><img src="/_/img/social-icons/twitter.png" alt="Follow Fitfish on Twitter" width="40" height="40" /></a><br>
+      <a href="https://www.youtube.com/user/FitfishRetreats"><img src="/_/img/social-icons/youtube.png" alt="YouTube" width="40" height="40" /></a>
+  </aside>
 </div>
 
 <footer id="page-footer" role="contentinfo">
-	<ul>
-		<li><a href="/_/pdf/terms.pdf" target="_blank">Terms &amp; conditions</a></li>
-		<li><a href="/_/pdf/privacy.pdf" target="_blank">Privacy policy</a></li>
-		<li><a href="/contact-us">Contact details</a></li>
-	</ul>
+  <ul>
+    <li><a href="/_/pdf/terms.pdf" target="_blank">Terms &amp; conditions</a></li>
+    <li><a href="/_/pdf/privacy.pdf" target="_blank">Privacy policy</a></li>
+    <li><a href="/contact-us">Contact details</a></li>
+  </ul>
 </footer>
 
 <!-- Scripts -->

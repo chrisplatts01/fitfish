@@ -1,5 +1,5 @@
 # AuthUserFile /Volumes/Madrigal/Users/Chris/Work/clients/fit-fish.co.uk/live/friends/.htpasswd
-AuthUserFile /home/linweb32/f/fit-fish.co.uk-1076167410/user/htdocs/friends/.htpasswd
-AuthType Basic
-AuthName "Friends"
-Require valid-user
+# AuthUserFile /home/linweb32/f/fit-fish.co.uk-1076167410/user/htdocs/friends/.htpasswd
+# AuthType Basic
+# AuthName "Friends"
+# Require valid-user

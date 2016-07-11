@@ -51,14 +51,14 @@
 
 		// Email sent successfully
 		if ($sent) {
-			echo "<p> Thank you for taking the time to send us all of your information! As soon as we receive payment (see bottom of page) we will start working on <strong>Your Plate</strong> and send it to you via email within 2 working days so that you can start to fulfil your goals!</p>\n";
+			echo "<p>Thank you for taking the time to send us all of your information! As soon as we receive payment (see bottom of page) we will start working on Your Plate and send it to you via email within 10 working days (most likely sooner) so that you can start to fulfil your goals!</p>\n";
 
 			echo "<ul>\n";
 			foreach ($_POST as $key=>$value) {
 				if ($key <> "Submit") echo "<li><strong>$key:</strong> $value</li>\n";
 			}
 			echo "</ul>\n";
-			echo '<p>Please use the PayPal button, below, to pay for <strong>Your Plate</strong>. Alternatively please make a transfer to a/c 83198586 sort code 09-01-27 stating your name as the reference.  Once payment is received we will start working on <strong>Your Plate</strong> straightaway. If you fill <strong>Your Plate</strong> you will fulfil <strong>Your Goals!</strong></p>';
+			echo '<p>Please use the PayPal button, below, to pay for <strong>Your Plate</strong>. Once payment is received we will start working on <strong>Your Plate</strong> straightaway. If you fill <strong>Your Plate</strong> you will fulfil <strong>Your Goals!</strong></p>';
 			echo '
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">

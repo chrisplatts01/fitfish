@@ -1,4 +1,4 @@
-Fitfish 2015
-============
+Fitfish
+=======
 
-Fitfish 2015 website    
+Fitfish website    

@@ -59,8 +59,8 @@
         <li><a href="/retreats/weekends/house-of-bread-2017.html">&nbsp;&nbsp;&bull; House of Bread 2017</a></li>
         <li><a href="/retreats/weekends/programme.html">&nbsp;&nbsp;&bull; A typical programme</a></li>
         <li><span>Weeks</span></li>
-        <!--<li><a href="/retreats/weeks/snow-and-spa.html">&nbsp;&nbsp;&bull; Snow &amp; Spa Jan 2017</a></li>-->
-        <li><a href="/retreats/weeks/france.html">&nbsp;&nbsp;&bull; France 2017</a></li>
+        <li><a href="/retreats/weeks/snow-and-spa.html">&nbsp;&nbsp;&bull; Snow &amp; Spa January 2018</a></li>
+        <!-- li><a href="/retreats/weeks/france.html">&nbsp;&nbsp;&bull; France 2017</a></li -->
         <li><a href="/retreats/prices">Prices</a></li>
         <li><a href="/retreats/book-now">Book now</a></li>
         <li><a href="/retreats/feedback">Feedback</a></li>
@@ -171,12 +171,12 @@
             <select id="Retreat" name="Retreat*">
               <option value="" disabled="disabled" selected>Please choose&hellip;</option>
               <!--<option value="House of Bread Friday 24th–Sunday 26th March 2017">House of Bread Friday 24th–Sunday 26th March 2017</option>-->
-              <option value="House of Bread Friday 12th–Sunday 14th May 2017">House of Bread Friday 12th–Sunday 14th May 2017</option>
+              <!-- option value="House of Bread Friday 12th–Sunday 14th May 2017">House of Bread Friday 12th–Sunday 14th May 2017</option -->
               <!--<option value="House of Bread Friday 7th–Sunday 9th July 2017">House of Bread Friday 7th–Sunday 9th July 2017</option>-->
               <option value="House of Bread Friday 22nd–Sunday 24th September 2017">House of Bread Friday 22nd–Sunday 24th September 2017</option>
               <option value="House of Bread Friday 3rd-Sunday 5th November 2017">House of Bread Friday 3rd-Sunday 5th November 2017</option>
-              <!--<option value="Snow and Spa January 2017">Snow and Spa January 2017</option>-->
-              <option value="France June 2017">France June 2017</option>
+              <option value="Snow and Spa January 2018">Snow and Spa January 2018</option>
+              <!-- option value="France June 2017">France June 2017</option -->
             </select>
           </td>
           <td><label for="Room">Room*</label></td>
@@ -188,14 +188,14 @@
                 <option value="House of Bread - Twin £259">House of Bread - Twin £259</option>
                 <option value="House of Bread - Twin single occupancy £299">House of Bread - Twin single occupancy £299</option>
               </optgroup>
-
+<!--
               <optgroup label="France">
                 <option value="France - Twin Ensuite Villa - &pound;569">France - Twin Ensuite Villa - &pound;569</option>
                 <option value="France - Twin Shared Bathroom Villa - &pound;499">France - Twin Shared Bathroom Villa - &pound;499</option>
                 <option value="France - Single Occ Twin Ensuite Villa - &pound;639">France - Single Occ Twin Ensuite Villa - &pound;639</option>
                 <option value="France - Single Occ Shared Bathroom Villa  - &pound;569">France - Single Occ Shared Bathroom Villa  - &pound;569</option>
               </optgroup>
-<!--
+-->
               <optgroup label="Snow and  Spa Austria - January 2017">
                 <option value="Snow and Spa - Triple Room £589">Snow and Spa - Triple Room £589</option>
                 <option value="Snow and Spa - Double/Twin share same bed £622">Snow and Spa - Double/Twin share same bed £622</option>
@@ -204,7 +204,7 @@
             </select>
           </td>
           </tr>
--->
+
           <tr>
           <td><label for="ShareWith">If you have asked for a twin or a double (marrieds) then who would you like to share with?</label></td>
           <td><input id="ShareWith" name="Share-With" class="text" type="text" /></td>
@@ -215,7 +215,7 @@
           <tr>
           <td colspan="4">
             <h3>Your Included Option</h3>
-            <!-- <p><strong>(Not applicable for Snow and Spa.<!-- For Fitfish France please chose from the first 4 -->)</strong></p>-->
+            <p><strong>(Not applicable for Snow and Spa.<!-- For Fitfish France please chose from the first 4 -->)</strong></p>-->
             <p><strong>During the Retreat you get an 'Included Option’ which is a chance to make the most of the expertise within the team.</strong></p>
             <dl>
             <dt>Life Coaching</dt>
@@ -307,7 +307,7 @@
             <p>We can only offer one <strong>Included Option</strong> per person on each Retreat.</p>
           </td>
           </tr>
-<!--
+
           <tr>
           <td colspan="4"><h3>Snow and Spa only</h3></td>
           </tr>
@@ -324,7 +324,7 @@
           </tr>
 
           <tr>
-          <td>Do you require hire?*</td>
+          <td>Do you require ski and boot hire?*</td>
           <td colspan="3">
             <input  id="Require-Hire-Yes" name="Require-Hire*" class="radio" type="radio" value="Yes">
             <label for="Require-Hire-Yes">Yes</label>
@@ -335,13 +335,13 @@
           </tr>
 
           <tr>
-          <td>Do you require lessons?*</td>
+          <td>Do you require transfer from Salzburg to the resort?*</td>
           <td colspan="3">
-            <input  id="Require-Lessons-Yes" name="Require-Lessons*" class="radio" type="radio" value="Yes">
-            <label for="Require-Lessons-Yes">Yes</label>
+            <input  id="Require-Transfer-Yes" name="Require-Transfer*" class="radio" type="radio" value="Yes">
+            <label for="Require-Transfer-Yes">Yes</label>
             &nbsp;
-            <input  id="Require-Lessons-No" name="Require-Lessons*" class="radio" type="radio" value="No" checked>
-            <label for="Require-Lessons-No">No</label>
+            <input  id="Require-Transfer-No" name="Require-Transfer*" class="radio" type="radio" value="No" checked>
+            <label for="Require-Transfer-No">No</label>
           </td>
           </tr>
 
@@ -349,7 +349,11 @@
           <td><label for="Other-Information">Any other information you would like to tell us:</label></td>
           <td colspan="3"><textarea id="Other-Information" name="Other-Information"></textarea></td>
           </tr>
--->
+
+          <tr>
+          <td colspan="4"><p>Bookable in Resort: Excellent Local Lessons – from 78 euros</p></td>
+          </tr>
+
           <tr>
           <td colspan="4"><h3>Your fitness</h3></td>
           </tr>

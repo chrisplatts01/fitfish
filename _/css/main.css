@@ -946,6 +946,10 @@ nav {
     color: #257290; }
     #recipe-types .recipe-type a:hover {
       background-color: #eee; }
+  #recipe-types .recipe-type .recipe-image {
+    height: 114px;
+    width: 144px; }
+
 
 .profile {
   margin-bottom: 7px;
